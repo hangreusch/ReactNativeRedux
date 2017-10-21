@@ -41,11 +41,7 @@ class SearchForm extends Component {
         rowHasChanged: (row1, row2) => row1 !== row2
     });*/
     componentWillMount () {
-        /*this.dataSource = new ListView.DataSource({
-            rowHasChanged: (row1, row2) => row1 !== row2
-        });*/
-        //axios.get('https://rallycoding.herokuapp.com/api/music_albums')
-        axios.get('http://stage-glintful-disp-node.wal-mart.com/fulfillment-node-dispensing-manager/resource/getsettings?countryCode=US&nodeId=5505&userId=ajsnow',
+        axios.get('http://fulfillment-node-dispensing-manager/resource/getsettings?countryCode=US&nodeId=5505&userId=ajsnow',
             {
                 headers: {"Accept-Language": "en-US"}
             })
@@ -155,23 +151,8 @@ class SearchForm extends Component {
         }
     }
 
-    /*componentDidUpdate () {
-        console.log('did mount runs');
-        axios.get('http://stage-glintful-disp-node.wal-mart.com/fulfillment-node-dispensing-manager/resource/dispense/search/getorders?countryCode=US&nodeId=5505&userId=ajsnow',
-            {
-                headers: {"Accept-Language": "en-US"},
-                params: this.params
-            })
-            .then(response => {
-                console.log(response);
-            })
-            .catch (() => {
-                console.log('error');
-            })
-    }*/
-
     onSearchButtonPress () {
-        axios.get('http://stage-glintful-disp-node.wal-mart.com/fulfillment-node-dispensing-manager/resource/dispense/search/getorders?countryCode=US&nodeId=5505&userId=ajsnow',
+        axios.get('http://fulfillment-node-dispensing-manager/resource/dispense/search/getorders?countryCode=US&nodeId=5505&userId=ajsnow',
             {
                 headers: {"Accept-Language": "en-US"},
                 params: this.params
