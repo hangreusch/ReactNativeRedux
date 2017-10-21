@@ -1,0 +1,28 @@
+[ {
+"key": "Name", "value": "FULL_NAME,FIRST_NAME,LAST_NAME"
+}
+,
+{
+"key": "Order Number", "value": "CUSTOMER_ORDER_NUMBER"
+}
+,
+{
+"key": "Load Number", "value": "LOAD_NUMBER"
+}
+,
+{
+"key": "Customer Number", "value": "CUSTOMER_MEMBER_NUMBER"
+}
+,
+{
+"key": "ASN Number", "value": "ASN_NUMBER"
+}
+,
+{
+"key": "Phone", "value": "PHONE_NUMBER"
+}
+,
+{
+"key": "Email", "value": "EMAIL_ADDRESS"
+}
+]
